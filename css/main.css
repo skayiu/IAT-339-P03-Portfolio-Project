@@ -7,7 +7,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-/* 1) Followed this example: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
+/* Reference from: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
 /* The font used was from Google Fonts: https://fonts.google.com/specimen/Quicksand */
 
 header {
@@ -111,18 +111,19 @@ input, textarea{
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
-  color: white;
+  color: #6D7DA1;
   font-size: 1em;
-  background-color: #6D7DA1;
+  background-color: none;
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-radius: 8px; /* Used the following example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #6D7DA1; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
 }
 
 .button-nav:hover, .button-nav:focus {
   color: white;
-  background-color: #B3CEE5;
+  background-color: #6D7DA1;
 }
 
 /* Styling for the submit/reset button */
@@ -136,8 +137,8 @@ input[type=submit] {
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-radius: 8px; /* Used the following example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
-  border: 2px solid #6D7DA1; /* Used the following example: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
+  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #6D7DA1; /* Reference from: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
@@ -155,8 +156,8 @@ input[type=reset] {
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-radius: 8px; /* Used the following example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
-  border: 2px solid #6D7DA1; /* Used the following example: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
+  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #6D7DA1; /* Reference from: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
 }
 
 input[type=reset]:hover, input[type=reset]:focus {
@@ -177,14 +178,9 @@ a:hover, a:focus {
 }
 
 /* Styling for image class */
-/* Used the following example: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+/* Reference from: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .image:hover, .image:focus {
   opacity: 0.6;
-}
-
-/* Sets the sizing of the images in the order confirmation pages: confirm-coldbrew.html and confirm-hojicha.html */
-.img-confirm{
-  width: 20%;
 }
 
 /* Sizing of the company logo */
@@ -194,27 +190,31 @@ a:hover, a:focus {
 }
 
 /* Styling for labels and inputs */
-/* Reference from Building Forms (Shay Howe) - https://learn.shayhowe.com/html-css/building-forms/ */
+/* Reference from: Building Forms (Shay Howe) - https://learn.shayhowe.com/html-css/building-forms/ */
 
 label {
   color: #6D7DA1;
 }
 
 input {
-  background-color: #6D7DA1;
+  background-color: white;
   opacity: 80%;
-  border-color: #6D7DA1;
+  border-color: #B3CEE5;
   font-family: "Quicksand", Helvetica, sans-serif;
   font-weight: 400;
-  color: white;
+  color: #6D7DA1;
   text-shadow: none;
   border-radius: 5px;
 }
 
 input:hover, input:focus {
-  background-color: #B3CEE5;
-  color: white;
-  border-color: #B3CEE5;
+  background-color: white;
+  color: #6D7DA1;
+  border-color: #6D7DA1;
+}
+
+input[type=text]:focus {
+  outline: 2px solid #6D7DA1;
 }
 
 /* Styling for the radio button upon selecting */
@@ -239,7 +239,7 @@ p {
   COMBINED ELEMENTS -------------------
 */
 
-/* Styling the radio button. Used the following example: https://usefulangle.com/post/389/css-radio-button-color */
+/* Styling the radio button. Reference from: https://usefulangle.com/post/389/css-radio-button-color */
 
 .radio-item label {
   color: #6D7DA1;
