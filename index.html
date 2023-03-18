@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> P03: Portfolio Project </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flex.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <section id = "style-guide">
+
+      <header>
+        <h1>P03: Portfolio Project</h1>
+
+        <p>Style Guide Template for P03.</p>
+
+        <nav>        
+          <a class="button-nav" href="#style-guide">Style Guide</a>
+          <a class="button-nav" href="#interactive-elements">Interactive Elements</a>
+          <a class="button-nav" href="#text-elements">Text Elements</a>
+          <a class="button-nav" href="#combined-elements">Combined Elements</a>
+          <a class="button-nav" href="#portfolio-contents">Portfolio Contents</a>
+          <a class="button-nav" href="#bio">Bio</a>
+          <a class="button-nav" href="#contact">Contact</a>
+          <a class="button-nav" href="#projects">Projects</a>
+          <a class="button-nav" href="#citations">Citations</a>
+          
+          <a class="button-nav" href="home.html">P03 Porfolio</a>
+        </nav>
+      </header>
+    </section>
+
+
+    <!-- Interactive Elements -->
+
+    <section id="interactive-elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p> .link </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;a class="link" href="#"&gt; Link &lt;/a&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <a class = "link" href = "#"> Link </a>
+
+      </section>
+
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="button" href="#"&gt; Default Button &lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p> input[type=submit], input[type=reset] </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;input type = "submit" value = "Submit" /&gt;</code>
+        <code> &lt;input type = "reset" value = "Reset" /&gt;</code>
+
+        <h4> Rendered element: </h4>
+        <input type = "submit" value = "Submit" />
+        <input type = "reset" value = "Reset" />
+
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p> .box_form, .box_form_item, label, input[type=text] </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;form class="footer_box_form"&gt; </code>
+        <code> &lt;div class = "box_form_item"&gt; </code>
+        <code> &lt;label for = "Input"&gt; Input: &lt;/label&gt; </code>
+        <code> &lt;input type = "text" id = "Input" input = "Input"&gt; </code>
+        <code> &lt;/div&gt; </code>
+        <code> &lt;/form&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <form class="box_form">
+          <div class="box_form_item">
+            <label for = "Input"> Text input: </label>
+            <input type = "text" id = "Input" input = "Input">
+          </div>
+        </form>
+
+        <!-- Used the following resource for the code: https://blog.hubspot.com/website/html-text-box -->
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p> input, label </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;div class = "radio-item"&gt; </code>
+        <code> &lt;input type = "radio" id = "input1" name = "option" value = "input1"&gt;</code>
+        <code> &lt;label for = "input1"&gt; Option 1 &lt;/label&gt; &lt;br&gt; </code>
+        <code> &lt;/div&gt; </code>
+
+        <code> &lt;div class = "radio-item"&gt; </code>
+        <code> &lt;input type = "radio" id = "input2" name = "option" value = "input2"&gt;</code>
+        <code> &lt;label for = "input2"&gt; Option 2 &lt;/label&gt; &lt;br&gt; </code>
+        <code> &lt;/div&gt; </code>
+
+        <code> &lt;div class = "radio-item"&gt; </code>
+        <code> &lt;input type = "radio" id = "input3" name = "option" value = "input3"&gt;</code>
+        <code> &lt;label for = "input3"&gt; Option 3 &lt;/label&gt; &lt;br&gt; </code>
+        <code> &lt;/div&gt; </code>
+        
+        <h4> Rendered element: </h4>
+        <div class = "radio-item">
+          <input type = "radio" id = "input1" name = "option" value = "input1">
+          <label for = "input1"> Option 1 </label> <br>
+        </div>
+        <div class = "radio-item">
+          <input type = "radio" id = "input2" name = "option" value = "input2">
+          <label for = "input2"> Option 2 </label> <br>
+        </div>
+        <div class = "radio-item">
+          <input type = "radio" id = "input3" name = "option" value = "input3">
+          <label for = "input3"> Option 3 </label> <br>
+        </div>
+
+        <!-- Used the following resource for the code: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio -->
+
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p> a, .image </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;a href="https://www.siftandsimmer.com/cold-brew-coffee-with-espresso-option/"&gt; &lt;img src="img/cold_brew.jpg" alt="Cold Brew" style="width: 120px;height: 180px;"&gt; &lt;/a&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <a href="https://www.siftandsimmer.com/cold-brew-coffee-with-espresso-option/"> <img src="img/cold_brew.jpg" alt="Cold Brew" class = "image" style="width: 120px;height: 180px;"> </a>
+
+        <!-- Used the following resource for the code: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image -->
+
+      </section>
+
+    </section>
+
+    <!-- Text Elements -->
+
+    <section id="text-elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p> h1, h2, h3, h4 </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;h1&gt; Heading 1 &lt;/h1&gt; </code>
+        <code> &lt;h2&gt; Heading 2 &lt;/h2&gt; </code>
+        <code> &lt;h3&gt; Heading 3 &lt;/h3&gt; </code>
+        <code> &lt;h4&gt; Heading 4 &lt;/h4&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <h1> Heading 1 </h1>
+        <h2> Heading 2 </h2>
+        <h3> Heading 3 </h3>
+        <h4> Heading 4 </h4>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p> p </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;p&gt; Put paragraph here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, lectus fringilla ullamcorper iaculis, quam turpis blandit elit, a efficitur nunc mauris ac quam. Nunc efficitur erat eu ornare gravida. Cras nunc massa, ultricies eget libero id, interdum convallis erat. Nam pellentesque bibendum pellentesque. Sed laoreet erat diam, ac ornare odio congue non. In turpis ipsum, tempor a accumsan id, aliquam at diam. Mauris vel vestibulum tortor. Morbi viverra sodales facilisis. Vivamus a sapien et felis viverra pharetra vitae non mauris. In commodo velit vitae arcu consequat dapibus. Etiam cursus accumsan ante, a pretium neque tristique et. Donec in felis. &lt;/p&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <p> Put paragraph here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, lectus fringilla ullamcorper iaculis, quam turpis blandit elit, a efficitur nunc mauris ac quam. Nunc efficitur erat eu ornare gravida. Cras nunc massa, ultricies eget libero id, interdum convallis erat. Nam pellentesque bibendum pellentesque. Sed laoreet erat diam, ac ornare odio congue non. In turpis ipsum, tempor a accumsan id, aliquam at diam. Mauris vel vestibulum tortor. Morbi viverra sodales facilisis. Vivamus a sapien et felis viverra pharetra vitae non mauris. In commodo velit vitae arcu consequat dapibus. Etiam cursus accumsan ante, a pretium neque tristique et. Donec in felis. </p>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p> ol, li </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;ol&gt; </code>
+        <code> &lt;li&gt; Item 1 &lt;/li&gt; </code>
+        <code> &lt;li&gt; Item 2 &lt;/li&gt; </code>
+        <code> &lt;li&gt; Item 3 &lt;/li&gt; </code>
+        <code> &lt;/ol&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <ol> 
+          <li> Item 1 </li>
+          <li> Item 2 </li>
+          <li> Item 3 </li>
+        </ol>
+
+        <!-- Used the following resource for the code: https://www.w3schools.com/html/html_lists.asp -->
+
+      </section>
+
+    </section>
+
+    <!-- Combined Elements -->
+
+    <section id="combined-elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+
+          <h3> Navigation Bar </h3>
+
+          <h4>CSS selector:</h4>
+          
+
+          <h4> Sample code: </h4>
+        
+
+          <h4> Rendered element: </h4>
+            
+        
+      </section>
+
+      <section id="banner">
+        <section class="element">
+          <h3> Page Banner </h3>
+
+          <h4> CSS selector: </h4>
+          <p> .banner, .box-banner, h2, p </p>
+
+          <h4> Sample Code: </h4>
+          <code> &lt;div class="banner"&gt; </code>
+          <code> &lt;div class="box-banner"&gt; </code>
+          <code> &lt;h2&gt; Page Title &lt;/h2&gt; </code>
+          <code> &lt;p&gt; Put page subtext here. &lt;/p&gt; </code>
+          <code> &lt;/div&gt; </code>
+          <code> &lt;/div&gt; </code>
+
+          <h4> Rendered element: </h4>
+          <div class="banner">
+            <div class="box-banner">
+              <h2> Page Title </h2>
+              <p> Put page subtext here. </p>
+            </div>
+           </div>
+
+        </section>
+      </section>
+
+      <section id="footer">
+        <section class="element">
+          <h3> Footer </h3>
+
+          <h4>CSS selector:</h4>
+          
+
+          <h4> Sample code: </h4>
+          
+
+          <h4> Rendered element: </h4>
+          
+
+        </section>
+      </section>
+    </section>
+
+    <!-- Portfolio contents -->
+
+    <section id="portfolio-contents">
+      <h2>Portfolio Contents</h2>
+
+      <section id = "bio">
+        <section class="element">
+
+          <h2> Bio </h2>
+
+          
+        </section>
+
+      </section>
+
+      <section id = "contact">
+        <section class="element">
+
+          <h2> Contact </h2>
+
+          
+
+        </section>
+
+      </section>
+
+      <section id = "projects">
+        <section class="element">
+
+          <h2> Projects </h2>
+
+          
+
+        </section>
+
+      </section>
+
+    </section>
+
+    <section id="citations">
+      <section class="element">
+        <h2>Citations</h2>
+
+        <h4> References used for the font and images: </h4>
+        <ul>
+          <li> (n.d.). <strong>18 Specialty Coffee Shops in Tokyo [Image]</strong>. Retrieved from <a href="#">https://www.farfelue.com/wp-content/uploads/IMG_1690.jpg</a>.</li>
+          <li> (n.d.). <strong>Cafe Interior [Image]</strong>. Retrieved from <a href="#">https://cdn.thespaces.com/wp-content/uploads/2021/07/NOLA.jpg </a>.</li>
+          <li> (n.d.). <strong>Interior of the Japanese Cafe [Image]</strong>. Retrieved from <a href="#">https://cdn.decoist.com/wp-content/uploads/2019/02/Fabulous-and-cheerful-interior-of-the-Japanese-cafe.jpg </a>.</li>
+          <li> (n.d.). <strong>Tinker Website Design [Image]</strong>. Retrieved from <a href="#">https://assets.hongkiat.com/uploads/clean-simple-minimalist-website-design/tinker.jpg</a>.</li>
+          <li> Andrew Paglinawan. (Designer). (2008). <strong> Google Fonts Quicksand [Webpage] </strong>. Retrieved from <a href="#">https://fonts.google.com/specimen/Quicksand </a>.</li>
+          <li> Michelle. (Blogger). (2022). <strong>Cold Brew Coffee with Expresso Option [Webpage]</strong>. Retrieved from <a href="#"> https://www.siftandsimmer.com/cold-brew-coffee-with-espresso-option/ </a>.</li>
+          <li> Michelle. (Blogger). (2022). <strong>Sakura Strawberry Latte [Webpage]</strong>. Retrieved from <a href="#">https://www.siftandsimmer.com/sakura-strawberry-latte/ </a>.</li>
+          <li> Michelle. (Blogger). (2021). <strong>Homemade Matcha Expresso Fusion [Webpage]</strong>. Retrieved from <a href="#"> https://www.siftandsimmer.com/homemade-matcha-espresso-fusion/ </a>.</li>
+          <li> Michelle. (Blogger). (2019). <strong>Iced Hojicha Latte [Webpage]</strong>. Retrieved from <a href="#"> https://www.siftandsimmer.com/iced-hojicha-latte/ </a>.</li>
+          <li> Michelle. (Blogger). (2022). <strong>Sakura Lychee Fizz [Webpage]</strong>. Retrieved from <a href="#"> https://www.siftandsimmer.com/sakura-lychee-fizz/ </a>.</li>
+          <li> Osume. (Company). (2022). <strong>dalgona keycaps [Webpage]</strong>. Retrieved from <a href="#"> https://osumekeys.com/products/dalgona </a>.</li>
+        </ul>
+
+        <h4> References used for the coding portion: </h4>
+        <ul>
+          <li> https://blog.hubspot.com/website/html-text-box </li>
+          <li> https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio </li>
+          <li> https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image </li>
+          <li> https://bt21.fandom.com/wiki/CHIMMY </li>
+          <li> https://www.w3schools.com/html/html_lists.asp </li>
+          <li> https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file </li>
+          <li> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons </li>
+          <li> https://www.w3schools.com/howto/howto_css_image_overlay.asp </li>
+          <li> https://learn.shayhowe.com/html-css/building-forms/ </li>
+          <li> https://flexboxfroggy.com/ </li>
+          <li> https://usefulangle.com/post/389/css-radio-button-color </li>
+          <li> https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button </li>
+          <li> https://stackoverflow.com/questions/72691591/first-child-and-second-in-flexbox </li>
+          <li> https://www.w3schools.com/cssref/css3_pr_box-shadow.php </li>
+          <li> https://stackoverflow.com/questions/43427993/change-the-color-of-a-input-field-when-selected </li>
+          <li> https://css-tricks.com/snippets/css/a-guide-to-flexbox/ </li>
+        </ul>
+
+        <h4> Link to GitHub: <a href="https://github.com/skayiu/Team-13-P02-Company">https://github.com/skayiu/Team-13-P02-Company</a></h4> 
+
+      </section>
+
+    </section>
+
+  </body>
+</html>

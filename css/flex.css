@@ -1,0 +1,168 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/* Styling for the navigation menu */
+/* References for flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Flexbox for the form*/
+
+.box_checkout, .box_booking {
+
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+    -webkit-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+
+    flex-direction: row;
+
+}
+
+.box_form{
+    -webkit-flex: 1 1 0;
+	-ms-flex: 1 1 0;
+    flex: 1 1 0;
+}
+
+.box_form_item{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.box_form_item_col{
+    display: inline-block;
+}
+
+.box_form_button{
+    display: flex;
+    justify-content: center;
+}
+
+/* Media query if the max-width is less than 75rem*/
+@media screen and (max-width: 75rem){
+    header{
+        flex-direction: column;
+    }
+
+    .contact-main{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product-main {
+        width: 90%;
+    }
+    
+}
+
+/* Media query if the max-width is less than 50rem - applies to mobile devices*/
+@media screen and (max-width: 50rem){
+    nav{
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .logo-image{
+        width: 100%;
+      }
+
+    .menu-items img{
+        width: 60%;
+    }
+
+    .reviews, .review-section{
+        flex-direction: column;
+    }
+
+    .box-review{
+        width: 100%;
+    }
+
+    .updates-sub {
+        width: 100%;
+    }
+
+    .product-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-main img{
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .img-confirm{
+        width: 100%;
+    }
+
+    .logo-image{
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .box-confirm{
+        flex-direction: column;
+    }
+
+    .box_booking_item{
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-box{
+        flex-direction: column;
+    }
+
+    .footer-nav-element h5{
+        margin-top: 2em;
+    }
+
+    .cart-header{
+        display: none;
+    } 
+
+    .cart-items img {
+        width: 80%;
+    }
+
+    .cart-items {
+        align-items: flex-start;
+        padding-bottom: 1em;
+    }
+
+    .cart-items p, .cart-items h4{
+        font-size: 70%;
+    }
+
+    .cart{
+        padding-bottom: 2rem;
+        border-top: 0.15rem solid #AC9584;
+        width: 100%;
+        padding-bottom: 0;
+    }
+}
+

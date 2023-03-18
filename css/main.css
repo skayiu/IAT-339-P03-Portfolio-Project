@@ -1,0 +1,345 @@
+/*
+  Colour palette hex code references:
+    Main colour: Blue #6D7DA1
+    Sub colour: Serenity blue #B3CEE5
+    Accent colour 1: Rose quartz #F7CAC9
+    Accent colour 2: White #FFFFFF
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+/* 1) Followed this example: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
+/* The font used was from Google Fonts: https://fonts.google.com/specimen/Quicksand */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+
+}
+
+body {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 2rem;
+  background-color: white;
+  color: #6D7DA1;
+}
+
+section{
+  margin-bottom:2rem; 
+  background-color: white;  
+  padding: 1rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #F7CAC9;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h5 {
+  margin-top: 0.25rem;
+}
+
+
+p {
+  margin-top: 0;
+  font-weight: 400;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  background-color: white;
+  border-color: #B3CEE5;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+nav a:hover, nav a:focus {
+  color: white;
+  background-color: #B2C8B0;
+}
+
+code {
+  background-color: #B3CEE5;
+  color: white;
+  padding: 0.5rem;
+  display: block;
+}
+
+input, textarea{
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for navigation bar buttons */
+
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1em;
+  background-color: #6D7DA1;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8px; /* Used the following example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: white;
+  background-color: #B3CEE5;
+}
+
+/* Styling for the submit/reset button */
+
+input[type=submit] {
+  display: inline-block;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1em;
+  color: white;
+  background-color: #6D7DA1;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8px; /* Used the following example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #6D7DA1; /* Used the following example: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+  color: white;
+  background-color: #B3CEE5;
+  border: 2px solid #B3CEE5;
+}
+
+input[type=reset] {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 1em;
+  color: white;
+  background-color: #6D7DA1;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8px; /* Used the following example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #6D7DA1; /* Used the following example: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
+}
+
+input[type=reset]:hover, input[type=reset]:focus {
+  color: white;
+  background-color: #B3CEE5;
+  border: 2px solid #B3CEE5;
+}
+
+/* Styling for in-text link */
+
+a {
+  color: #6D7DA1 ;
+}
+
+a:hover, a:focus {
+  /*color: #AC9584;*/
+  color: #B3CEE5;
+}
+
+/* Styling for image class */
+/* Used the following example: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.image:hover, .image:focus {
+  opacity: 0.6;
+}
+
+/* Sets the sizing of the images in the order confirmation pages: confirm-coldbrew.html and confirm-hojicha.html */
+.img-confirm{
+  width: 20%;
+}
+
+/* Sizing of the company logo */
+.logo-image{
+  width: 335.1px;
+  height: 52.5px;
+}
+
+/* Styling for labels and inputs */
+/* Reference from Building Forms (Shay Howe) - https://learn.shayhowe.com/html-css/building-forms/ */
+
+label {
+  color: #6D7DA1;
+}
+
+input {
+  background-color: #6D7DA1;
+  opacity: 80%;
+  border-color: #6D7DA1;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-weight: 400;
+  color: white;
+  text-shadow: none;
+  border-radius: 5px;
+}
+
+input:hover, input:focus {
+  background-color: #B3CEE5;
+  color: white;
+  border-color: #B3CEE5;
+}
+
+/* Styling for the radio button upon selecting */
+
+input [type='radio']:after {
+  background-color: #B3CEE5;
+}
+
+input [type='radio']:checked:after {
+  background-color: #B3CEE5;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+p {
+  max-width: 100%;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling the radio button. Used the following example: https://usefulangle.com/post/389/css-radio-button-color */
+
+.radio-item label {
+  color: #6D7DA1;
+}
+
+input[name="option"] {
+  accent-color: #B3CEE5;
+}
+
+input[type="add"] {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Banner box is used for banner information at the top of the page*/
+.box-banner{
+  text-align: center;
+}
+
+/* Main flexbox container */
+.box-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for footer */
+
+footer {
+  /*background-color: #AC9584;*/
+  /* padding-left: 10em;
+  padding-right: 10em; */
+  margin: auto;
+  width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.footer-nav-element {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.footer-logo {
+  margin-bottom: 0.65em;
+  width: 279.25px;
+  height: 43.75px; 
+}
+
+/* Styling for the footer navigation links */
+
+.footer-nav {
+  text-decoration: none;
+  color: #6D7DA1;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.35em;
+}
+
+.footer-nav:hover, .footer-nav:focus {
+  color: #B3CEE5;
+  text-decoration: underline;
+  text-decoration-color: #F7CAC9;
+}
+
+.footer-element {
+  padding-bottom: 1rem;
+  margin-top: 1em;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: #6D7DA1;
+  width: 100%;
+}
+
+footer section {
+  background-color: #B3CEE5;
+  border-top: 5em;
+}
+
+footer p {
+  color: #6D7DA1;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer_box_form h4{
+  margin-bottom: 1rem;
+}
+
+/* Styling for citations */
+.citations-main {
+  padding-left: 3em;
+  padding-right: 3em;
+}
