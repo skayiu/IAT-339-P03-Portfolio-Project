@@ -323,18 +323,18 @@ footer {
 }
 
 footer section {
-  background-color: #B3CEE5;
+  /* background-color: #B3CEE5; */
   border-top: 5em;
 }
 
 footer p {
   color: #6D7DA1;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 400;
   text-align: center;
 }
 
-.footer_box_form h4{
+.footer-box-form h4{
   margin-bottom: 1rem;
 }
 
