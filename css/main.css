@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-
+  /*position: fixed;  fixes the header in place so it doesn't move even when we scroll */
 }
 
 body {
