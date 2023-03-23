@@ -7,8 +7,10 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 /* Reference from: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
 /* The font used was from Google Fonts: https://fonts.google.com/specimen/Quicksand */
+/* https://fonts.google.com/specimen/Oooh+Baby?preview.text=Semi&preview.text_type=custom&category=Handwriting */
 
 header {
   display: flex;
@@ -41,14 +43,16 @@ section{
 }
 
 h1 {
+  font-family: "Oooh Baby", Helvetica, sans-serif;
+  font-size: 18px;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -88,7 +92,7 @@ nav a {
 
 nav a:hover, nav a:focus {
   color: white;
-  background-color: #B2C8B0;
+  background-color: #6D7DA1;
 }
 
 code {
@@ -107,7 +111,23 @@ input, textarea{
 }
 
 .project-img {
-  width: 30%;
+  width: 100%;
+  border: 2px solid #6D7DA1;
+  border-radius: 8px;
+  transition: transform .5s, filter 1.5s ease-in-out; /* Reference from: https://w3bits.com/css-image-hover-zoom/ */
+}
+
+.project-img:hover, .project-img:focus {
+  border: 2px solid #B3CEE5;
+  transform: scale(1.025);
+}
+
+.project1-img {
+  width: 20%;
+}
+
+.project2-img {
+  width: 50%;
 }
 
 /* 
