@@ -7,21 +7,23 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Bab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /* Reference from: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
 /* The font used was from Google Fonts: https://fonts.google.com/specimen/Quicksand */
-/* https://fonts.google.com/specimen/Oooh+Baby?preview.text=Semi&preview.text_type=custom&category=Handwriting */
+/* https://fonts.google.com/specimen/Oooh+Baby?category=Handwriting */
+/* https://fonts.google.com/specimen/Poppins?category=Sans+Serif */
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;y
   align-items: center;
   padding: 10px 10px;
   /*position: fixed;  fixes the header in place so it doesn't move even when we scroll */
 }
 
 body {
-  font-family: "Quicksand", Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
   font-size: 18px;
   padding: 2rem;
   background-color: white;
@@ -104,6 +106,10 @@ code {
 
 input, textarea{
   font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+.palette {
+  width: 20%;
 }
 
 .sg-img {
