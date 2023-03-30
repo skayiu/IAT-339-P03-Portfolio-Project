@@ -115,6 +115,18 @@ input, textarea{
   width: 20%;
 }
 
+.home-project-img {
+  width: 100%;
+  border: 2px solid #6D7DA1;
+  border-radius: 8px;
+  transition: transform .5s, filter 1.5s ease-in-out; /* Reference from: https://w3bits.com/css-image-hover-zoom/ */
+}
+
+.home-project-img:hover, .home-project-img:focus {
+  border: 2px solid #B3CEE5;
+  transform: scale(1.025);
+}
+
 .project-img {
   width: 100%;
   border: 2px solid #6D7DA1;
@@ -219,6 +231,13 @@ a:hover, a:focus {
   color: #B3CEE5;
 }
 
+.link {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 /* Styling for image class */
 /* Reference from: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .image:hover, .image:focus {
@@ -307,6 +326,10 @@ input[type="add"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#home-info, #home-projects, #about, #project-1, #project-2 {
+  margin: 4em;
 }
 
 /* Styling for footer */
