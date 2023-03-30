@@ -39,10 +39,10 @@ nav {
 
 .projects-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 2em;
     /*background-color: gray;*/
 }
@@ -58,6 +58,13 @@ nav {
     border: 2px solid #6D7DA1;
     border-radius: 20px;
     /*background-color: pink;*/
+}
+
+.project-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4em;
 }
 
 /* STYLE GUIDE */
