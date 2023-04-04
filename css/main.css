@@ -44,6 +44,10 @@ section{
   width: 100%;
 }
 
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
 h1 {
   font-size: 18px;
   margin-top: 1rem;
@@ -71,12 +75,14 @@ h4 {
 
 h5 {
   margin-top: 0.25rem;
+  font-size: 0.8rem;
 }
 
-
 p {
+  font-size: 1.25rem;
   margin-top: 0;
   font-weight: 400;
+  max-width: 100%;
 }
 
 nav a {
@@ -188,46 +194,6 @@ input, textarea{
   background-color: #6D7DA1;
 }
 
-/* Styling for the submit/reset button */
-
-input[type=submit] {
-  display: inline-block;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  font-size: 1em;
-  color: white;
-  background-color: #6D7DA1;
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
-  border: 2px solid #6D7DA1; /* Reference from: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
-}
-
-input[type=submit]:hover, input[type=submit]:focus {
-  color: white;
-  background-color: #B3CEE5;
-  border: 2px solid #B3CEE5;
-}
-
-input[type=reset] {
-  display: inline-block;
-  padding: 0.5rem;
-  font-size: 1em;
-  color: white;
-  background-color: #6D7DA1;
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
-  border: 2px solid #6D7DA1; /* Reference from: https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button */
-}
-
-input[type=reset]:hover, input[type=reset]:focus {
-  color: white;
-  background-color: #B3CEE5;
-  border: 2px solid #B3CEE5;
-}
-
 /* Styling for in-text link */
 
 a {
@@ -258,86 +224,26 @@ a:hover, a:focus {
   height: 52.5px;
 }
 
-/* Styling for labels and inputs */
-/* Reference from: Building Forms (Shay Howe) - https://learn.shayhowe.com/html-css/building-forms/ */
-
-label {
-  color: #6D7DA1;
-}
-
-input {
-  background-color: white;
-  opacity: 80%;
-  border-color: #B3CEE5;
-  font-family: "Quicksand", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #6D7DA1;
-  text-shadow: none;
-  border-radius: 5px;
-}
-
-input:hover, input:focus {
-  background-color: white;
-  color: #6D7DA1;
-  border-color: #6D7DA1;
-}
-
-input[type=text]:focus {
-  outline: 2px solid #6D7DA1;
-}
-
-/* Styling for the radio button upon selecting */
-
-input [type='radio']:after {
-  background-color: #B3CEE5;
-}
-
-input [type='radio']:checked:after {
-  background-color: #B3CEE5;
-}
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-p {
-  max-width: 100%;
-}
-
 /* 
   COMBINED ELEMENTS -------------------
 */
-
-/* Styling the radio button. Reference from: https://usefulangle.com/post/389/css-radio-button-color */
-
-.radio-item label {
-  color: #6D7DA1;
-}
-
-input[name="option"] {
-  accent-color: #B3CEE5;
-}
-
-input[type="add"] {
-  font-family: "Quicksand", Helvetica, sans-serif;
-  text-align: center;
-}
 
 /* Banner box is used for banner information at the top of the page*/
 .box-banner{
   text-align: center;
 }
 
-/* Main flexbox container */
-.box-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #home-info, #home-projects, #about, #project-1, #project-2 {
   margin: 4em;
+}
+
+.project-yt-container {
+  width: 800px;
+  height: 450px;
+  border: 2px solid #6D7DA1;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 8px;
 }
 
 /* Styling for footer */

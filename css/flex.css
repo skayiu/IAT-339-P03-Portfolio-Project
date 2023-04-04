@@ -10,6 +10,14 @@ nav {
     justify-content: space-between;
 }
 
+/* MAIN FLEXBOX CONTAINER */
+.box-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* HOME PAGE */
 
 .home-projects-container {
@@ -64,7 +72,13 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 4em;
+}
+
+.project-yt-container {
+    display: block;
+    margin: auto;
 }
 
 /* STYLE GUIDE */
