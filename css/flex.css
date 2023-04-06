@@ -10,14 +10,6 @@ nav {
     justify-content: space-between;
 }
 
-/* MAIN FLEXBOX CONTAINER */
-.box-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* HOME PAGE */
 
 .home-projects-container {
@@ -33,14 +25,73 @@ nav {
 .home-project-individual-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 50%;
     padding: 2em;
     margin: 2em;
-    border: 2px solid #6D7DA1;
+    border: 2px solid #B3CEE5;
     border-radius: 20px;
     /*background-color: pink;*/
+}
+
+/* ABOUT PAGE */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.about-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.about-skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.skills-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid #6D7DA1;
+    border-radius: 20px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 20%;
+    padding: 1em;
+    margin: 1em;
 }
 
 /* PROJECTS PAGE */
@@ -58,14 +109,14 @@ nav {
 .project-individual-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 50%;
     padding: 2em;
     margin: 2em;
-    border: 2px solid #6D7DA1;
+    border: 2px solid #B3CEE5;
     border-radius: 20px;
-    /*background-color: pink;*/
 }
 
 .project-img-container {
@@ -79,6 +130,12 @@ nav {
 .project-yt-container {
     display: block;
     margin: auto;
+}
+
+/* INDIVIDUAL PROJECT PAGE */
+
+.project1-container, .project2-container {
+    padding: 2em;
 }
 
 /* STYLE GUIDE */

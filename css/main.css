@@ -2,8 +2,9 @@
   Colour palette hex code references:
     Main colour: Blue #6D7DA1
     Sub colour: Serenity blue #B3CEE5
-    Accent colour 1: Rose quartz #F7CAC9
-    Accent colour 2: White #FFFFFF
+    Accent colour 1: White #FFFFFF
+    Accent colour 2: Yellow #FDE74C
+    Accent colour 3: Rose quartz #F7CAC9
 */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
@@ -16,18 +17,21 @@
 
 header {
   display: flex;
-  justify-content: space-between;y
+  justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
+  width: 100%;
+  background-color: white;
   /*position: fixed;  fixes the header in place so it doesn't move even when we scroll */
 }
 
 body {
   font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 18px;
-  padding: 2rem;
+  font-size: 1rem;
   background-color: white;
   color: #6D7DA1;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 section{
@@ -59,6 +63,7 @@ h2 {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
+  text-decoration: underline dotted #FDE74C;
 }
 
 h3 {
@@ -85,32 +90,11 @@ p {
   max-width: 100%;
 }
 
-nav a {
-  color: white;
-  display: inline-block;
-  background-color: white;
-  border-color: #B3CEE5;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
-  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-  text-decoration: none;
-  transition: background-color 0.5s ease-out;
-}
-
-nav a:hover, nav a:focus {
-  color: white;
-  background-color: #6D7DA1;
-}
-
 code {
   background-color: #B3CEE5;
   color: white;
   padding: 0.5rem;
   display: block;
-}
-
-input, textarea{
-  font-family: "Quicksand", Helvetica, sans-serif;
 }
 
 .palette {
@@ -123,31 +107,39 @@ input, textarea{
 
 .home-project-img {
   width: 100%;
-  border: 2px solid #6D7DA1;
+  border: 2px solid #B3CEE5;
   border-radius: 8px;
   transition: transform .5s, filter 1.5s ease-in-out; /* Reference from: https://w3bits.com/css-image-hover-zoom/ */
 }
 
 .home-project-img:hover, .home-project-img:focus {
-  border: 2px solid #B3CEE5;
+  border: 2px solid #6D7DA1;
   transform: scale(1.025);
+}
+
+.profile-img {
+  width: 35%;
+  border: 2px solid #B3CEE5;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 8px;
 }
 
 .project-img {
   width: 100%;
-  border: 2px solid #6D7DA1;
+  border: 2px solid #B3CEE5;
   border-radius: 8px;
   transition: transform .5s, filter 1.5s ease-in-out; /* Reference from: https://w3bits.com/css-image-hover-zoom/ */
 }
 
 .project-img:hover, .project-img:focus {
-  border: 2px solid #B3CEE5;
+  border: 2px solid #6D7DA1;
   transform: scale(1.025);
 }
 
 .project1-img {
   width: 40%;
-  border: 2px solid #6D7DA1;
+  border: 2px solid #B3CEE5;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
@@ -155,7 +147,7 @@ input, textarea{
 
 .project2-img {
   width: 60%;
-  border: 2px solid #6D7DA1;
+  border: 2px solid #B3CEE5;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
@@ -176,7 +168,42 @@ input, textarea{
   opacity: 0.6;
 }
 
-.button-nav {
+/* Reference from: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+
+nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  text-decoration: none;
+  position: relative;
+  color: #6D7DA1;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FDE74C;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #6D7DA1;
+}
+
+.button-link {
   display: inline-block;
   padding: 0.5rem;
   color: #6D7DA1;
@@ -189,7 +216,27 @@ input, textarea{
   border: 2px solid #6D7DA1; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
 }
 
-.button-nav:hover, .button-nav:focus {
+.button-link:hover, .button-link:focus {
+  color: white;
+  background-color: #6D7DA1;
+}
+
+.view-button {
+  display: inline-block;
+  padding: 0.5rem;
+  width: 5em;
+  color: #6D7DA1;
+  text-align: center;
+  font-size: 1em;
+  background-color: none;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #6D7DA1; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
+}
+
+.view-button:hover, .view-button:focus {
   color: white;
   background-color: #6D7DA1;
 }
@@ -200,16 +247,15 @@ a {
   color: #6D7DA1 ;
 }
 
-a:hover, a:focus {
-  /*color: #AC9584;*/
-  color: #B3CEE5;
-}
-
 .link {
   margin-top: 1rem;
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+.link:hover, .link:focus {
+  color: #B3CEE5;
 }
 
 /* Styling for image class */
@@ -231,6 +277,7 @@ a:hover, a:focus {
 /* Banner box is used for banner information at the top of the page*/
 .box-banner{
   text-align: center;
+  /*background-color: aliceblue;*/
 }
 
 #home-info, #home-projects, #about, #project-1, #project-2 {
@@ -240,7 +287,7 @@ a:hover, a:focus {
 .project-yt-container {
   width: 800px;
   height: 450px;
-  border: 2px solid #6D7DA1;
+  border: 2px solid #B3CEE5;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
@@ -249,9 +296,6 @@ a:hover, a:focus {
 /* Styling for footer */
 
 footer {
-  /*background-color: #AC9584;*/
-  /* padding-left: 10em;
-  padding-right: 10em; */
   margin: auto;
   width: 100%;
 }
@@ -288,8 +332,6 @@ footer {
 
 .footer-nav:hover, .footer-nav:focus {
   color: #B3CEE5;
-  text-decoration: underline;
-  text-decoration-color: #F7CAC9;
 }
 
 .footer-element {
@@ -321,4 +363,35 @@ footer p {
 .citations-main {
   padding-left: 3em;
   padding-right: 3em;
+}
+
+/* ANIMATION */
+
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
