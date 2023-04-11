@@ -209,12 +209,6 @@ nav {
         top: 55%;
     }
 
-    .home-projects-container {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
     #about {
         flex-direction: column;
         justify-content: center;
@@ -252,6 +246,12 @@ nav {
 
     .banner-text {
         top: 50%;
+    }
+
+    .home-projects-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
 
     .project1-container, .project2-container {
