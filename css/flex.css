@@ -31,7 +31,7 @@ nav {
     width: 50%;
     padding: 2em;
     margin: 2em;
-    border: 2px solid #B3CEE5;
+    border: 2px solid #30A3FA;
     border-radius: 20px;
     /*background-color: pink;*/
 }
@@ -41,7 +41,7 @@ nav {
 .about-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: nowrap;
 }
 
@@ -80,7 +80,7 @@ nav {
     width: 50%;
     padding: 1em;
     margin: 1em;
-    border: 2px solid #6D7DA1;
+    border: 2px solid #30A3FA;
     border-radius: 20px;
 }
 
@@ -116,7 +116,7 @@ nav {
     width: 80%;
     padding: 2em;
     margin: 2em;
-    border: 2px solid #B3CEE5;
+    border: 2px solid #30A3FA;
     border-radius: 20px;
 }
 
@@ -152,7 +152,16 @@ nav {
 /* INDIVIDUAL PROJECT PAGE */
 
 .project1-container, .project2-container {
-    padding: 2em;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+/* FOOTER */
+
+.footer-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* STYLE GUIDE */
@@ -174,26 +183,93 @@ nav {
     width: 50%;
 }
 
-/* Media query if the max-width is less than 75rem*/
-@media screen and (max-width: 75rem) {
-    header {
-        flex-direction: column;
-    }    
-}
+/* Media query if the max-width is less than 100rem*/
+@media screen and (max-width: 100rem) {
 
-/* Media query if the max-width is less than 50rem - applies to mobile devices*/
-@media screen and (max-width: 50rem) {
-    nav {
+    .banner-text h1 {
+      margin-top: 1rem;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    .banner-text h3 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .banner-text p {
+      font-size: 1rem;
+      margin-top: 0;
+      font-weight: 400;
+      max-width: 100%;
+    }
+
+    .banner-text {
+        top: 55%;
+    }
+
+    .home-projects-container {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
 
-    .logo-image {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
+    .project1-container, .project2-container {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+}
+
+@media screen and (max-width: 70rem) {
+
+    .banner-text h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .banner-text h3 {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .banner-text p {
+      font-size: 0.6rem;
+      margin-top: 0;
+      font-weight: 400;
+      max-width: 100%;
+    } 
+
+    .banner-text {
+        top: 50%;
+    }
+
+    .project1-container, .project2-container {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .project1-img {
+        width: 60%;
+    } 
+
+    .project2-img {
+        width: 80%;
+    }
+
+    .project-yt-container {
+        width: 600px;
+        height: 338px;
     }
 
     footer {
@@ -204,9 +280,84 @@ nav {
         flex-direction: column;
     }
 
-    .footer-nav-element h5 {
-        margin-top: 2em;
+}
+
+/* Media query if the max-width is less than 50rem - applies to mobile devices*/
+@media screen and (max-width: 50rem) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    } 
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-text h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .banner-text h3 {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .banner-text p {
+      font-size: 0.6rem;
+      margin-top: 0;
+      font-weight: 400;
+      max-width: 100%;
+    } 
+
+    .banner-text {
+        top: 40%;
+    }
+
+    .about-container {
+        display: block;
+    }
+
+    .project-individual-container {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+
+    .project-img {
+        width: 150%;
+    }
+
+    .project1-container, .project2-container {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .project1-img {
+        width: 80%;
+    } 
+
+    .project2-img {
+        width: 100%;
+    }
+
+    .project-yt-container {
+        width: 400px;
+        height: 225px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-box {
+        flex-direction: column;
     }
 
 }
-

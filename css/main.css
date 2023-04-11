@@ -5,6 +5,12 @@
     Accent colour 1: White #FFFFFF
     Accent colour 2: Yellow #FDE74C
     Accent colour 3: Rose quartz #F7CAC9
+
+    Main colour: Medium blue #30A3FA 
+    Sub colour: Dark Blue #0064B0
+    Accent colour 2: Pink #FFBBD0
+    Accent colour 3: Cyan green #50FEE4
+    Accent colour 4: White #FFFFFF
 */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
@@ -29,7 +35,7 @@ body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1rem;
   background-color: white;
-  color: #6D7DA1;
+  color: #30A3FA;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -53,7 +59,6 @@ section{
 */
 
 h1 {
-  font-size: 18px;
   margin-top: 1rem;
   font-size: 5rem;
   font-weight: 700;
@@ -63,7 +68,7 @@ h2 {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
-  text-decoration: underline dotted #FDE74C;
+  text-decoration: underline dotted #FFBBD0;
 }
 
 h3 {
@@ -83,7 +88,7 @@ h5 {
   font-size: 0.8rem;
 }
 
-p {
+p, li {
   font-size: 1.25rem;
   margin-top: 0;
   font-weight: 400;
@@ -91,9 +96,11 @@ p {
 }
 
 code {
-  background-color: #B3CEE5;
-  color: white;
+  background-color: white;
+  color: #0064B0;
   padding: 0.5rem;
+  border: 2px solid #FFBBD0;
+  border-radius: 8px;
   display: block;
 }
 
@@ -105,22 +112,29 @@ code {
   width: 20%;
 }
 
+.banner-img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .home-project-img {
   width: 100%;
-  border: 2px solid #B3CEE5;
+  border: 2px solid #30A3FA;
   border-radius: 8px;
   transition: transform .5s, filter 1.5s ease-in-out; /* Reference from: https://w3bits.com/css-image-hover-zoom/ */
 }
 
 .home-project-img:hover, .home-project-img:focus {
-  border: 2px solid #6D7DA1;
+  border: 2px solid #0064B0;
   transform: scale(1.025);
 }
 
 .profile-img {
   width: 519.5px;
   height: 585.5px;
-  border: 2px solid #B3CEE5;
+  border: 2px solid #30A3FA;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
@@ -128,19 +142,19 @@ code {
 
 .project-img {
   width: 100%;
-  border: 2px solid #B3CEE5;
+  border: 2px solid #30A3FA;
   border-radius: 8px;
   transition: transform .5s, filter 1.5s ease-in-out; /* Reference from: https://w3bits.com/css-image-hover-zoom/ */
 }
 
 .project-img:hover, .project-img:focus {
-  border: 2px solid #6D7DA1;
+  border: 2px solid #0064B0;
   transform: scale(1.025);
 }
 
 .project1-img {
   width: 40%;
-  border: 2px solid #B3CEE5;
+  border: 2px solid #30A3FA;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
@@ -148,7 +162,7 @@ code {
 
 .project2-img {
   width: 60%;
-  border: 2px solid #B3CEE5;
+  border: 2px solid #30A3FA;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
@@ -179,7 +193,7 @@ nav a {
   margin: 0.2rem 0.2rem 0.2rem 0.2rem;
   text-decoration: none;
   position: relative;
-  color: #6D7DA1;
+  color: #30A3FA;
   text-decoration: none;
 }
 
@@ -191,7 +205,7 @@ nav a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FDE74C;
+  background-color: #FFBBD0;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -201,32 +215,33 @@ nav a:hover::before {
 }
 
 .button-nav:hover, .button-nav:focus {
-  color: #6D7DA1;
+  color: #30A3FA;
 }
 
 .button-link {
   display: inline-block;
   padding: 0.5rem;
-  color: #6D7DA1;
+  color: #30A3FA;
   font-size: 1em;
   background-color: none;
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
-  border: 2px solid #6D7DA1; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
+  border: 2px solid #30A3FA; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
 }
 
 .button-link:hover, .button-link:focus {
   color: white;
-  background-color: #6D7DA1;
+  background-color: #30A3FA;
+  border: 2px solid #30A3FA;
 }
 
 .view-button {
   display: inline-block;
   padding: 0.5rem;
   width: 5em;
-  color: #6D7DA1;
+  color: #30A3FA;
   text-align: center;
   font-size: 1em;
   background-color: none;
@@ -234,18 +249,18 @@ nav a:hover::before {
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
-  border: 2px solid #6D7DA1; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
+  border: 2px solid #30A3FA; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
 }
 
 .view-button:hover, .view-button:focus {
   color: white;
-  background-color: #6D7DA1;
+  background-color: #30A3FA;
 }
 
 /* Styling for in-text link */
 
 a {
-  color: #6D7DA1 ;
+  color: #30A3FA ;
 }
 
 /*
@@ -257,7 +272,7 @@ a {
 }
 
 .link:hover, .link:focus {
-  color: #B3CEE5;
+  color: #30A3FA;
 }
 */
 
@@ -270,7 +285,7 @@ a {
   margin: 1rem 0.2rem 0.2rem 0.2rem;
   text-decoration: none;
   position: relative;
-  color: #6D7DA1;
+  color: #30A3FA;
   text-decoration: none;
 }
 
@@ -282,7 +297,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FDE74C;
+  background-color: #FFBBD0;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -293,12 +308,12 @@ a {
 
 .project-link {
   position: relative;
-  color: #6D7DA1;
+  color: #30A3FA;
   text-decoration: none;
 }
 
 .project-link:hover {
-  color: #6D7DA1;
+  color: #6D730A3FADA1;
 }
 
 .project-link {
@@ -310,7 +325,7 @@ a {
   margin: 1rem 0.2rem 0.2rem 0rem;
   text-decoration: none;
   position: relative;
-  color: #6D7DA1;
+  color: #30A3FA;
   text-decoration: none;
 }
 
@@ -322,7 +337,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FDE74C;
+  background-color: #FFBBD0;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -354,6 +369,27 @@ a {
   /*background-color: aliceblue;*/
 }
 
+.banner-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0064B0;
+}
+
+.banner-text a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #0064B0;
+  font-size: 1em;
+  background-color: none;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8px; /* Reference from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border: 2px solid #0064B0; /* Reference from: https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
+}
+
 #home-info, #home-projects, #about, #project-1, #project-2 {
   margin: 4em;
 }
@@ -361,10 +397,14 @@ a {
 .project-yt-container {
   width: 800px;
   height: 450px;
-  border: 2px solid #B3CEE5;
+  border: 2px solid #30A3FA;
   margin: 1em;
   padding: 0.5em;
   border-radius: 8px;
+}
+
+.project1-container h3, .project2-container h3 {
+  padding-top: 2em;
 }
 
 /* Styling for footer */
@@ -374,38 +414,29 @@ footer {
   width: 100%;
 }
 
-.footer-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: flex-start;
+.footer {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding-right: 2.5em;
 }
 
-.footer-nav-element {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-}
-
-.footer-logo {
-  margin-bottom: 0.65em;
-  width: 279.25px;
-  height: 43.75px; 
+.footer li {
+  display: inline-block;
 }
 
 /* Styling for the footer navigation links */
 
 .footer-nav {
   text-decoration: none;
-  color: #6D7DA1;
+  color: #30A3FA;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0.35em;
 }
 
 .footer-nav:hover, .footer-nav:focus {
-  color: #B3CEE5;
+  color: #0064B0;
 }
 
 .footer-element {
@@ -413,25 +444,15 @@ footer {
   margin-top: 1em;
   border-top-width: 0.1rem;
   border-top-style: solid;
-  border-top-color: #6D7DA1;
+  border-top-color: #FFBBD0;
   width: 100%;
 }
 
 footer section {
-  /* background-color: #B3CEE5; */
+  /* background-color: #30A3FA; */
   border-top: 5em;
 }
 
-footer p {
-  color: #6D7DA1;
-  font-size: 0.85rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-.footer-box-form h4{
-  margin-bottom: 1rem;
-}
 
 /* Styling for citations */
 .citations-main {
