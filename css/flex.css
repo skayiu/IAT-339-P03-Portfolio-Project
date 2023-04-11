@@ -19,7 +19,6 @@ nav {
     align-items: center;
     flex-wrap: nowrap;
     padding: 1em;
-    /*background-color: gray;*/
 }
 
 .home-project-individual-container {
@@ -33,7 +32,7 @@ nav {
     margin: 2em;
     border: 2px solid #30A3FA;
     border-radius: 20px;
-    /*background-color: pink;*/
+    background-color: rgb(95, 208, 250, 5%);
 }
 
 /* ABOUT PAGE */
@@ -82,6 +81,7 @@ nav {
     margin: 1em;
     border: 2px solid #30A3FA;
     border-radius: 20px;
+    background-color: rgb(95, 208, 250, 5%);
 }
 
 .icons-container {
@@ -91,7 +91,8 @@ nav {
     flex-wrap: nowrap;
     width: 20%;
     padding: 1em;
-    margin: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 /* PROJECTS PAGE */
@@ -118,6 +119,7 @@ nav {
     margin: 2em;
     border: 2px solid #30A3FA;
     border-radius: 20px;
+    background-color: rgb(95, 208, 250, 5%);
 }
 
 .project-description {
@@ -216,6 +218,14 @@ nav {
         align-items: center;
     }
 
+    .contact-container {
+        width: 50%;
+    }
+
+    .icons-container {
+        width: 20%;
+    }
+
     .project1-container, .project2-container {
         padding-left: 5em;
         padding-right: 5em;
@@ -246,6 +256,10 @@ nav {
 
     .banner-text {
         top: 50%;
+    }
+
+    .icons-container {
+        width: 25%;
     }
 
     .home-projects-container {
@@ -321,6 +335,14 @@ nav {
 
     .about-container {
         display: block;
+    }
+
+    .contact-container {
+        width: 60%;
+    }
+
+    .icons-container {
+        width: 30%;
     }
 
     .project-individual-container {
