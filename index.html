@@ -5,7 +5,7 @@
 
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title> P03: Portfolio Project </title>
+    <title> P03: Portfolio Project Style Guide </title>
 
     <link href = "css/main.css" rel = "stylesheet">
     <link href = "css/flex.css" rel = stylesheet">
@@ -15,11 +15,11 @@
 
   <body>
     <section id = "style-guide">
-
-      <header>
+      <div class = "box-banner">
         <h2> P03: Portfolio Project Style Guide </h2>
-
-        <nav>        
+      </div>
+      <header>
+        <nav>
           <a href = "#style-guide"> Style Guide </a>
           <a href = "#interactive-elements"> Interactive Elements </a>
           <a href = "#text-elements"> Text Elements </a>
@@ -31,17 +31,18 @@
       </header>
     </section>
 
-
-    <!-- Interactive Elements -->
+    <!-- INTERACTIVE ELEMENTS -->
 
     <section id = "interactive-elements">
-      <h2> Interactive Elements </h2>
+      <div class = "box-banner">
+        <h2> Interactive Elements </h2>
+      </div>
 
       <section class = "element">
         <h3> In-text link </h3>
 
         <h4> CSS selector: </h4>
-        <p> .link </p>
+        <p> a, .link </p>
 
         <h4> Sample code: </h4>
         <code> &lt;a class = "link" href = "#"&gt; Link &lt;/a&gt; </code>
@@ -51,18 +52,37 @@
 
       </section>
 
-      <section class="element">
+      <section class= "element">
 
         <h3> Navigation Link </h3>
 
         <h4> CSS selector: </h4>
-        <p> .button-nav </p>
+        <p> nav a, .link </p>
 
         <h4> Sample code: </h4>
-        <code>&lt;a class = "button" href = "#"&gt; Default Button &lt;/a&gt;</code>
+        <code> &lt;nav&gt; 
+        <br> &lt;a class = "button" href = "#"&gt; default link &lt;/a&gt; 
+        <br>&lt;/nav&gt; </code>
 
-        <h4>Rendered element:</h4>
-        <a class = "button-nav" href = "#"> Default Button </a>
+        <h4> Rendered element: </h4>
+        <nav>
+          <a class = "button-nav" href = "about.html"> default link </a>
+        </nav>
+
+      </section>
+
+      <section class= "element">
+
+        <h3> Navigation Button </h3>
+
+        <h4> CSS selector: </h4>
+        <p> a, .button-link </p>
+
+        <h4> Sample code: </h4>
+        <code> &lt;a class = "button-link" href = "#"&gt; default button &lt;/a&gt; </code>
+
+        <h4> Rendered element: </h4>
+        <a class = "button-link" href = "#"> default button </a>
 
       </section>
 
@@ -74,10 +94,14 @@
         <p> a, .footer-nav </p>
 
         <h4> Sample code: </h4>
-        <code>&lt;a class = "footer-nav" href = "index.html"&gt; Style Guide Home &lt;/a&gt;</code>
+        <code> &lt;nav&gt; 
+        <br> &lt;a class = "footer-nav" href = "#"&gt; style guide &lt;/a&gt; 
+        <br>&lt;/nav&gt; </code>
 
         <h4>Rendered element:</h4>
-        <a class = "footer-nav" href = "index.html"> Style Guide Home </a>
+        <nav>
+          <a class = "footer-nav" href = "#"> style guide </a>
+        </nav>
 
       </section>
 
@@ -115,10 +139,12 @@
 
     </section>
 
-    <!-- Text Elements -->
+    <!-- TEXT ELEMENTS -->
 
     <section id = "text-elements">
-      <h2> Text Elements </h2>
+      <div class = "box-banner">
+        <h2> Text Elements </h2>
+      </div>
 
       <section class = "element">
         <h3> Headings </h3>
@@ -127,10 +153,10 @@
         <p> h1, h2, h3, h4 </p>
 
         <h4> Sample code: </h4>
-        <code> &lt;h1&gt; Heading 1 &lt;/h1&gt; </code>
-        <code> &lt;h2&gt; Heading 2 &lt;/h2&gt; </code>
-        <code> &lt;h3&gt; Heading 3 &lt;/h3&gt; </code>
-        <code> &lt;h4&gt; Heading 4 &lt;/h4&gt; </code>
+        <code> &lt;h1&gt; Heading 1 &lt;/h1&gt; 
+        <br> &lt;h2&gt; Heading 2 &lt;/h2&gt; 
+        <br> &lt;h3&gt; Heading 3 &lt;/h3&gt;
+        <br> &lt;h4&gt; Heading 4 &lt;/h4&gt; </code>
 
         <h4> Rendered element: </h4>
         <h1> Heading 1 </h1>
@@ -141,24 +167,24 @@
       </section>
 
       <section class="element">
-        <h3>Numbered Lists</h3>
+        <h3> Unordered List </h3>
 
         <h4>CSS selector:</h4>
-        <p> ol, li </p>
+        <p> ul, li </p>
 
         <h4> Sample code: </h4>
-        <code> &lt;ol&gt; </code>
-        <code> &lt;li&gt; Item 1 &lt;/li&gt; </code>
-        <code> &lt;li&gt; Item 2 &lt;/li&gt; </code>
-        <code> &lt;li&gt; Item 3 &lt;/li&gt; </code>
-        <code> &lt;/ol&gt; </code>
+        <code> &lt;ul&gt; 
+        <br> &lt;li&gt; Item 1 &lt;/li&gt;
+        <br> &lt;li&gt; Item 2 &lt;/li&gt; 
+        <br> &lt;li&gt; Item 3 &lt;/li&gt; 
+        <br> &lt;/ul&gt; </code>
 
         <h4> Rendered element: </h4>
-        <ol> 
+        <ul> 
           <li> Item 1 </li>
           <li> Item 2 </li>
           <li> Item 3 </li>
-        </ol>
+        </ul>
 
       <section class = "element">
         <h3> Paragraphs </h3>
@@ -176,23 +202,42 @@
 
     </section>
 
-    <!-- Combined Elements -->
+    <!-- COMBINED ELEMENTS -->
 
     <section id = "combined-elements">
-      <h2> Combined Elements </h2>
+      <div class = "box-banner">
+        <h2> Combined Elements </h2>
+      </div>
 
       <section class="element">
 
           <h3> Navigation Bar </h3>
 
           <h4>CSS selector:</h4>
-          
+          <p> header, a, nav a, .nav-img, .button-nav </p>
 
           <h4> Sample code: </h4>
-        
+          <code> &lt;header>
+            <br> &lt;a href = "home.html"&gt; &lt;img src = "img/logo.png" alt = "Logo" class = "nav-img"> &lt;/a&gt;
+
+            <!-- the navigation bar -->
+            <br> &lt;nav&gt;
+              <br> &lt;a class = "button-nav" href = "about.html"&gt; about &lt;/a&gt;
+              <br> &lt;a class = "button-nav" href = "projects.html"> projects &lt;/a&gt;
+            <br> &lt;/nav&gt;
+          <br> &lt;/header&gt;</code>
+          
 
           <h4> Rendered element: </h4>
-            
+            <header>
+              <a href = "home.html"> <img src = "img/logo.png" alt = "Logo" class = "nav-img"> </a>
+
+              <!-- the navigation bar -->
+              <nav>
+                <a class = "button-nav" href = "about.html"> about </a>
+                <a class = "button-nav" href = "projects.html"> projects </a>
+              </nav>
+            </header>
         
       </section>
 
@@ -204,10 +249,10 @@
           <p> .box-banner, h2, p </p>
 
           <h4> Sample Code: </h4>
-          <code> &lt;div class = "box-banner"&gt; </code>
-          <code> &lt;h2&gt; Page Title &lt;/h2&gt; </code>
-          <code> &lt;p&gt; Put page subtext here. &lt;/p&gt; </code>
-          <code> &lt;/div&gt; </code>
+          <code> &lt;div class = "box-banner"&gt; 
+          <br> &lt;h2&gt; Page Title &lt;/h2&gt; 
+          <br> &lt;p&gt; Put page subtext here. &lt;/p&gt;
+          <br> &lt;/div&gt; </code>
 
           <h4> Rendered element: </h4>
           <div class = "box-banner">
@@ -223,22 +268,40 @@
           <h3> Footer </h3>
 
           <h4> CSS selector: </h4>
-          
+          <p> nav, ul, li, a, .footer-nav </p>
 
           <h4> Sample code: </h4>
-          
+          <code> &lt;nav&gt;
+            <br> &lt;ul class = "footer"&gt;
+              <br> &lt;li&gt; &lt;a class = "footer-nav" href = "home.html"&gt; home &lt;/a&gt; &lt;/li&gt;
+              <br> &lt;li&gt; &lt;a class = "footer-nav" href = "about.html #contact"&gt; contact &lt;/a&gt; &lt;/li&gt;
+              <br> &lt;li&gt; &lt;a class = "footer-nav" href = "https://github.com/skayiu/P03-Portfolio-Project"> p03 github &lt;/a&gt; &lt;/li&gt;
+              <br> &lt;li&gt; &lt;a class = "footer-nav" href = "index.html"&gt; style guide &lt;/a&gt; &lt;/li&gt;
+              <br> &lt;li&gt; &lt;a class = "footer-nav" href = "index.html #citations"&gt; citations &lt;/a&gt; &lt;/li&gt;
+            <br> &lt;/ul&gt;
+          <br> &lt;/nav&gt;</code>
 
           <h4> Rendered element: </h4>
-          
+          <nav>
+            <ul class = "footer">
+              <li> <a class = "footer-nav" href = "home.html"> home </a> </li>
+              <li> <a class = "footer-nav" href = "about.html #contact"> contact </a> </li>
+              <li> <a class = "footer-nav" href = "https://github.com/skayiu/P03-Portfolio-Project"> p03 github </a> </li>
+              <li> <a class = "footer-nav" href = "index.html"> style guide </a> </li>
+              <li> <a class = "footer-nav" href = "index.html #citations"> citations </a> </li>
+            </ul>
+          </nav>
 
         </section>
       </section>
     </section>
 
-    <!-- Portfolio contents -->
+    <!-- PORTFOLIO CONTENTS -->
 
     <section id = "visual-aspect">
-      <h2> Visual Aspect </h2>
+      <div class = "box-banner">
+        <h2> Visual Aspect </h2>
+      </div>
 
       <section class = "element">
 
@@ -251,7 +314,7 @@
           </div>
           <div class = "colour-container">
             <h4> Sub colour - #0064B0 </h4>
-            <p> Used for h1 text </p>
+            <p> Used for h1 text on home page and project image as a link hover </p>
             <img src = "img/Blue.png" alt = "Serenity blue" class = "palette">
           </div>
           <div class = "colour-container">
@@ -276,6 +339,13 @@
       <section class = "element">
 
         <h2> Fonts: </h2>
+        <div class = "fonts">
+          <h1> Title font: Waiting for the Sunrise </h1>
+          <p> Used for h1 and h2 on bio </p>
+
+          <h2> Main font: Poppins </h2>
+          <p> Used for portfolio content </p>
+        </div>
         
       </section>
 
@@ -295,22 +365,19 @@
 
         <h4> References used for the coding portion: </h4>
         <ul>
-          <li> https://blog.hubspot.com/website/html-text-box </li>
-          <li> https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio </li>
+          <li> https://css-tricks.com/snippets/css/a-guide-to-flexbox/ </li>
+          <li> https://jonitrythall.com/flexbox-cheatsheet </li>
+          <li> https://stackoverflow.com/questions/72691591/first-child-and-second-in-flexbox </li>
+          <li> https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file </li>
+          <li> https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ </li>
+          <li> https://w3bits.com/css-image-hover-zoom/ </li>
           <li> https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image </li>
           <li> https://www.w3schools.com/html/html_lists.asp </li>
-          <li> https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file </li>
           <li> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons </li>
+          <li> https://www.w3schools.com/howto/howto_css_outline_buttons.asp </li>
           <li> https://www.w3schools.com/howto/howto_css_image_overlay.asp </li>
-          <li> https://learn.shayhowe.com/html-css/building-forms/ </li>
-          <li> https://flexboxfroggy.com/ </li>
-          <li> https://usefulangle.com/post/389/css-radio-button-color </li>
-          <li> https://stackoverflow.com/questions/32459646/removing-the-shadow-from-a-button </li>
-          <li> https://stackoverflow.com/questions/72691591/first-child-and-second-in-flexbox </li>
           <li> https://www.w3schools.com/cssref/css3_pr_box-shadow.php </li>
-          <li> https://stackoverflow.com/questions/43427993/change-the-color-of-a-input-field-when-selected </li>
-          <li> https://css-tricks.com/snippets/css/a-guide-to-flexbox/ </li>
-          <li> https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ </li>
+          <li> https://www.youtube.com/watch?v=ly36kn0ug4k&ab_channel=WebDevTutorials </li>
         </ul>
 
         <h4> Link to GitHub: <a href="https://github.com/skayiu/Team-13-P02-Company">https://github.com/skayiu/P03-Portfolio-Project</a></h4> 
