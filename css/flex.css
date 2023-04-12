@@ -104,7 +104,6 @@ nav {
     align-items: center;
     flex-wrap: nowrap;
     padding: 2em;
-    /*background-color: gray;*/
 }
 
 .project-individual-container {
@@ -185,7 +184,9 @@ nav {
     width: 50%;
 }
 
-/* Media query if the max-width is less than 100rem*/
+/*MEDIA QUERY */
+
+/* Media query if the max-width is less than 100rem */
 @media screen and (max-width: 100rem) {
 
     .banner-text h1 {
@@ -258,6 +259,10 @@ nav {
         top: 50%;
     }
 
+    .about-sub-container h2 {
+        font-size: 2em;
+    }
+
     .icons-container {
         width: 25%;
     }
@@ -296,7 +301,7 @@ nav {
 
 }
 
-/* Media query if the max-width is less than 50rem - applies to mobile devices*/
+/* Media query if the max-width is less than 50rem - applies to mobile devices */
 @media screen and (max-width: 50rem) {
     header {
         flex-direction: column;
